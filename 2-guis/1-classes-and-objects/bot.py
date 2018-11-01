@@ -1,10 +1,10 @@
 class Bot:
 
   def __init__(self, name, age=0, energy=0, shield_level=0):
-    self.name = name
-    self.age = age
-    self.energy = energy
-    self.shield_level = shield_level
+    self.__name = name
+    self.__age = age
+    self.__energy = energy
+    self.__shield_level = shield_level
 
   def get_name(self):
     bot_name = self.name
@@ -23,7 +23,7 @@ class Bot:
 
   def decrement_shield(self):
     self.shield_level -= 0
-    
+
   def display_name(self):
     print(self.name)
 
@@ -49,7 +49,7 @@ class Bot:
 class SuperBot(Bot):
 
   def __init__(self, super_power_level):
-    self.super_power_level = super_power_level
+    self.__super_power_level = super_power_level
 
   def get_super_power_level(self):
     return(self.super_power_level)
@@ -61,10 +61,11 @@ class SuperBot(Bot):
 class FlyingBot(SuperBot):
 
   def __init__(self, hover):
-    self.hover = hover
+    self__.hover = hover
 
   def get_hover_distance(self):
     hover_distance = self.hover
 
   def set_hover_distance(self):
     self.hover = hover
+# --------------------------------------------
