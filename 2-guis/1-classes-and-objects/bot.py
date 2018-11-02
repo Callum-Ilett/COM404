@@ -1,3 +1,4 @@
+#class
 class Bot:
 
   def __init__(self, name, age=0, energy=0, shield_level=0):
