@@ -77,3 +77,5 @@ root = tk.Tk()
 
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
+
+Label(root, text="This", borderwidth=1, relief="solid")
